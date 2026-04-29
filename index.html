@@ -60,44 +60,13 @@
     .brand {
       display: flex;
       align-items: center;
-      gap: 18px;
     }
 
-    .logo-mark {
-      width: 76px;
-      height: 76px;
-      border-radius: 50%;
-      background: conic-gradient(from 210deg, var(--blue), var(--teal), var(--green), var(--yellow), var(--orange), var(--blue));
-      display: grid;
-      place-items: center;
-      flex: 0 0 auto;
-    }
-
-    .logo-mark-inner {
-      width: 54px;
-      height: 54px;
-      border-radius: 50%;
-      background: white;
-      display: grid;
-      place-items: center;
-      color: var(--navy);
-      font-weight: 800;
-      font-size: 18px;
-      letter-spacing: -0.5px;
-    }
-
-    .brand-text h1 {
-      margin: 0;
-      color: var(--navy);
-      font-size: 32px;
-      line-height: 1.1;
-      font-weight: 800;
-    }
-
-    .brand-text p {
-      margin: 6px 0 0 0;
-      color: var(--muted);
-      font-size: 16px;
+    .brand-logo {
+      display: block;
+      width: 360px;
+      max-width: 100%;
+      height: auto;
     }
 
     .staff-help {
@@ -143,7 +112,6 @@
       margin: 34px auto;
       padding: 0 28px;
     }
-
 
     .section-title {
       margin: 0 0 18px 0;
@@ -252,8 +220,8 @@
         font-size: 34px;
       }
 
-      .brand-text h1 {
-        font-size: 27px;
+      .brand-logo {
+        width: 280px;
       }
     }
   </style>
@@ -266,12 +234,7 @@
   <header>
     <div class="header-inner">
       <div class="brand">
-        <div class="logo-mark" aria-hidden="true">
-          <div class="logo-mark-inner">CoSP</div>
-        </div>
-        <div class="brand-text">
-          <h1>City of South Perth</h1>
-        </div>
+        <img class="brand-logo" src="CityOfSouthPerthLogo.png" alt="City of South Perth" />
       </div>
       <div class="staff-help">Need help? Please speak to one of our friendly staff members</div>
     </div>
@@ -344,7 +307,6 @@
         <span class="card-action">Open search</span>
       </a>
 
-
       <a class="link-card" href="https://www.news.com.au" target="_blank" rel="noopener noreferrer">
         <div>
           <h3>News.com.au</h3>
@@ -352,6 +314,7 @@
         </div>
         <span class="card-action">Open website</span>
       </a>
+
       <a class="link-card" href="https://www.office.com" target="_blank" rel="noopener noreferrer">
         <div>
           <h3>Office.com</h3>
